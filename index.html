@@ -1,291 +1,340 @@
-<!-- index.html -->
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NLP1 | Knowledge Artifact Repository</title>
-  <style>
-    :root {
-      --bg: #0f172a;
-      --panel: #111827;
-      --card: #1f2937;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --accent: #60a5fa;
-      --border: #334155;
-    }
 
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+<meta charset="UTF-8">
 
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #0b1220 0%, var(--bg) 100%);
-      color: var(--text);
-      line-height: 1.6;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+<title>NLP Knowledge Artifact Repository</title>
 
-    .layout {
-      display: grid;
-      grid-template-columns: 280px 1fr;
-      min-height: 100vh;
-    }
+<link rel="stylesheet" href="assets/css/style.css">
 
-    .sidebar {
-      background: rgba(17, 24, 39, 0.96);
-      border-right: 1px solid var(--border);
-      padding: 28px 20px;
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      overflow-y: auto;
-    }
+<script defer src="assets/js/script.js"></script>
 
-    .brand {
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-
-    .brand span {
-      color: var(--accent);
-    }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 24px;
-    }
-
-    .nav-title {
-      font-size: 0.78rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      color: var(--muted);
-      margin: 18px 0 10px;
-    }
-
-    .nav a {
-      display: block;
-      padding: 11px 12px;
-      border-radius: 10px;
-      color: var(--text);
-      border: 1px solid transparent;
-      margin-bottom: 8px;
-      background: rgba(255,255,255,0.02);
-    }
-
-    .nav a:hover {
-      border-color: var(--border);
-      background: rgba(96, 165, 250, 0.08);
-    }
-
-    .main {
-      padding: 30px;
-      max-width: 1250px;
-      width: 100%;
-    }
-
-    .hero {
-      background: linear-gradient(135deg, rgba(37,99,235,0.18), rgba(15,23,42,0.3));
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 28px;
-      box-shadow: 0 18px 60px rgba(0,0,0,0.18);
-    }
-
-    .hero h1 {
-      margin: 0 0 10px;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-    }
-
-    .hero p {
-      margin: 0;
-      max-width: 900px;
-      color: #dbe4f0;
-    }
-
-    .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .badge {
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.06);
-      border: 1px solid var(--border);
-      font-size: 0.92rem;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-      gap: 16px;
-      margin-top: 22px;
-    }
-
-    .card {
-      background: rgba(17, 24, 39, 0.9);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 18px;
-    }
-
-    .card h2, .section h2 {
-      margin-top: 0;
-    }
-
-    .muted {
-      color: var(--muted);
-    }
-
-    .section {
-      margin-top: 26px;
-      background: rgba(17, 24, 39, 0.72);
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      padding: 22px;
-    }
-
-    .section ul {
-      padding-left: 20px;
-      margin-bottom: 0;
-    }
-
-    .phase-box {
-      border-left: 4px solid var(--accent);
-      padding-left: 14px;
-      margin: 14px 0;
-    }
-
-    footer {
-      margin: 28px 0 10px;
-      color: var(--muted);
-      text-align: center;
-      font-size: 0.95rem;
-    }
-
-    @media (max-width: 900px) {
-      .layout { grid-template-columns: 1fr; }
-      .sidebar {
-        position: relative;
-        height: auto;
-      }
-      .main { padding: 18px; }
-    }
-  </style>
 </head>
+
 <body>
-  <div class="layout">
+
+<div class="layout">
+
     <aside class="sidebar">
-      <div class="brand">NLP<span>1</span></div>
-      <div class="subtitle">Knowledge Artifact Repository for Week 1 NLP topics</div>
 
-      <div class="nav-title">Main</div>
-      <nav class="nav">
-        <a href="#home">Home</a>
-        <a href="#phase1">Phase 1</a>
-        <a href="#phase2">Phase 2</a>
-        <a href="#submission">Submission</a>
-      </nav>
+        <div class="logo">
 
-      <div class="nav-title">Section A</div>
-      <nav class="nav">
-        <a href="section-a/index.html">Open Concept Cards</a>
-      </nav>
+            NLP<span>1</span>
+
+        </div>
+
+        <div class="subtitle">
+
+            Knowledge Artifact Repository
+
+        </div>
+
+        <div class="menu-title">
+
+            Repository
+
+        </div>
+
+        <nav class="menu">
+
+            <a href="#home">🏠 Home</a>
+
+            <a href="#about">📖 About</a>
+
+            <a href="section-a/index.html">📝 Section A</a>
+
+            <a href="section-b/index.html">📊 Section B</a>
+
+            <a href="section-c/index.html">🔄 Section C</a>
+
+            <a href="section-d/index.html">🌍 Section D</a>
+
+            <a href="section-e/index.html">🔬 Section E</a>
+
+            <a href="sustainability/index.html">🌱 Sustainability</a>
+
+            <a href="reflection/index.html">💭 Reflection</a>
+
+            <a href="contribution/index.html">👥 Contribution</a>
+
+            <a href="references/index.html">📚 References</a>
+
+        </nav>
+
     </aside>
 
-    <main class="main">
-      <section class="hero" id="home">
-        <h1>NLP Knowledge Repository</h1>
-        <p>
-          This website is made for the CCE activity on NLP. It covers Week 1 topics in simple
-          student style, with concept cards, comparisons, workflow diagrams, real world applications,
-          research notes, and sustainability points.
-        </p>
-        <div class="badges">
-          <div class="badge">Simple English</div>
-          <div class="badge">Student Friendly</div>
-          <div class="badge">GitHub Pages Ready</div>
-          <div class="badge">Week 1 NLP</div>
-        </div>
-      </section>
+    <main class="content">
 
-      <section class="section" id="phase1">
-        <h2>Phase 1</h2>
-        <div class="phase-box">
-          <strong>What this phase includes</strong>
-          <p class="muted">
-            A clean homepage, sidebar navigation, simple layout, and the base website structure.
-          </p>
-        </div>
-        <div class="grid">
-          <div class="card">
-            <h2>Home Page</h2>
-            <p class="muted">A simple landing page that explains the project clearly.</p>
-          </div>
-          <div class="card">
-            <h2>Navigation</h2>
-            <p class="muted">Easy links so the website is simple to move around.</p>
-          </div>
-          <div class="card">
-            <h2>Theme</h2>
-            <p class="muted">Dark, modern, and neat enough for submission.</p>
-          </div>
-          <div class="card">
-            <h2>Structure</h2>
-            <p class="muted">Ready for Section A, comparisons, diagrams, and more.</p>
-          </div>
-        </div>
-      </section>
+        <section class="hero" id="home">
 
-      <section class="section" id="phase2">
-        <h2>Phase 2</h2>
-        <p class="muted">
-          Section A will contain one page per concept. Every page will include definition, purpose,
-          working principle, example, advantages, limitations, and applications.
-        </p>
-        <ul>
-          <li>Sentence Segmentation</li>
-          <li>Tokenization</li>
-          <li>Case Normalization</li>
-          <li>Stop word Removal</li>
-          <li>Stemming</li>
-          <li>Lemmatization</li>
-          <li>Noise Removal</li>
-          <li>Text Cleaning</li>
-          <li>Bag of Words</li>
-          <li>N Grams</li>
-          <li>TF, IDF, TF IDF</li>
-          <li>One Hot Encoding</li>
-          <li>Word Embeddings, Word2Vec, FastText</li>
-          <li>Contextual Embeddings</li>
-          <li>Statistical, Neural, and Transformer based Language Models</li>
-        </ul>
-      </section>
+            <h1>
 
-      <section class="section" id="submission">
-        <h2>Submission Notes</h2>
-        <p class="muted">
-          The assignment asks for a repository link and a PDF or ZIP export. It also expects the
-          content to be well organized and easy to navigate.
-        </p>
-      </section>
+                NLP Knowledge Artifact Repository
 
-      <footer>
-        Built for NLP1
-      </footer>
+            </h1>
+
+            <p>
+
+                Welcome to our Knowledge Artifact Repository for Week 1 of Natural Language Processing.
+                This repository explains the basic concepts of NLP in a simple and easy way using
+                concept cards, workflow diagrams, comparison tables, examples, and real world applications.
+                The goal is to help beginners understand how raw text is prepared before it is used in NLP models.
+
+            </p>
+
+            <div class="badges">
+
+                <div class="badge">
+
+                    Week 1 NLP
+
+                </div>
+
+                <div class="badge">
+
+                    Beginner Friendly
+
+                </div>
+
+                <div class="badge">
+
+                    GitHub Pages
+
+                </div>
+
+                <div class="badge">
+
+                    Visual Learning
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section" id="about">
+
+            <h2 class="section-title">
+
+                About This Repository
+
+            </h2>
+
+            <div class="card">
+
+                <p>
+
+                    Natural Language Processing (NLP) allows computers to understand and work with human language.
+                    Before a computer can understand text, the text must be cleaned, organized, and converted into a format
+                    that machines can process.
+
+                </p>
+
+                <br>
+
+                <p>
+
+                    This repository focuses only on the Week 1 syllabus.
+                    Every section has been written in simple English with examples and diagrams so that students
+                    can quickly understand the main ideas without reading lengthy theory.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2 class="section-title">
+
+                Repository Overview
+
+            </h2>
+
+            <div class="grid">
+
+                <div class="card">
+
+                    <h2>
+
+                        📝 Section A
+
+                    </h2>
+
+                    <p>
+
+                        Concept cards explaining every Week 1 topic.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>
+
+                        📊 Section B
+
+                    </h2>
+
+                    <p>
+
+                        Comparison tables between important NLP techniques.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>
+
+                        🔄 Section C
+
+                    </h2>
+
+                    <p>
+
+                        Workflow diagrams explaining NLP pipelines.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>
+
+                        🌍 Section D
+
+                    </h2>
+
+                    <p>
+
+                        Real world applications where these concepts are used.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>
+
+                        🔬 Section E
+
+                    </h2>
+
+                    <p>
+
+                        Recent research, industrial applications, and open source NLP frameworks.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h2>
+
+                        🌱 Sustainability
+
+                    </h2>
+
+                    <p>
+
+                        How NLP contributes to society and sustainable development.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2 class="section-title">
+
+                Repository Workflow
+
+            </h2>
+
+            <div class="flow">
+
+Raw Text
+
+↓
+
+Text Preprocessing
+
+↓
+
+Feature Engineering
+
+↓
+
+Language Representation
+
+↓
+
+Language Models
+
+↓
+
+Real World NLP Applications
+
+            </div>
+
+        </section>
+
+        <section class="section">
+
+            <h2 class="section-title">
+
+                Learning Outcomes
+
+            </h2>
+
+            <div class="card">
+
+                <ul>
+
+                    <li>Understand the basic concepts of NLP.</li>
+
+                    <li>Learn why text preprocessing is important.</li>
+
+                    <li>Compare different NLP techniques.</li>
+
+                    <li>Understand language representation methods.</li>
+
+                    <li>Explore industrial and research applications of NLP.</li>
+
+                    <li>Understand the social impact of Natural Language Processing.</li>
+
+                </ul>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            Natural Language Processing • Knowledge Artifact Repository • 2026–27
+
+        </footer>
+
     </main>
-  </div>
+
+</div>
+
 </body>
+
 </html>
